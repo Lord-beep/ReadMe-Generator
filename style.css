@@ -1,0 +1,150 @@
+/* Configuração Geral */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0f172a; /* bg-slate-900 */
+    color: #f8fafc; /* text-slate-50 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+/* Contentor Principal */
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #1e293b; /* bg-slate-800 */
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 1px solid #334155; /* border-slate-700 */
+}
+
+/* Títulos */
+.title {
+    text-align: center;
+    color: #818cf8; /* text-indigo-400 */
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #94a3b8; /* text-slate-400 */
+    font-size: 14px;
+    margin: 0 0 24px 0;
+}
+
+/* Formulários */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    background-color: #020617; /* bg-slate-950 */
+    border: 1px solid #334155;
+    border-radius: 12px;
+    color: #a5b4fc;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #6366f1; /* focus:ring-indigo-500 */
+}
+
+/* Botão */
+.btn-submit {
+    width: 100%;
+    background-color: #4f46e5; /* bg-indigo-600 */
+    color: white;
+    font-weight: 700;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+}
+
+.btn-submit:hover {
+    background-color: #4338ca;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+/* Estados de Carregamento e Resultados */
+.status-box {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: #020617;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+}
+
+.status-text {
+    margin: 0;
+    font-size: 14px;
+    color: #818cf8;
+    font-weight: 500;
+}
+
+.success-box {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: rgba(6, 78, 59, 0.4);
+    border: 1px solid #065f46;
+    border-radius: 12px;
+}
+
+.success-title {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #34d399;
+}
+
+.success-desc {
+    margin: 0;
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+.textarea-field {
+    width: 100%;
+    height: 96px;
+    padding: 12px;
+    background-color: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    color: #cbd5e1;
+    font-size: 12px;
+    resize: none;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+/* Utilitários Básicos */
+.hidden { display: none; }

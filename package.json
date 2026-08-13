@@ -1,0 +1,51 @@
+{
+  "name": "readmegen-app",
+  "version": "1.0.0",
+  "description": "Gerador de README Rápido com Interface Gráfica",
+  "main": "main.js",
+  "type": "module",
+  "author": "Lord-beep",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "dependencies": {
+    "@google/genai": "^2.17.0"
+  },
+  "devDependencies": {
+    "electron": "31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.readmegen.app",
+    "productName": "ReadMeGenUI",
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "dir",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "style.css",
+      "package.json",
+      "node_modules/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "ReadMeGen-Server",
+        "to": "ReadMeGen-Server",
+        "filter": [
+          "**/*",
+          "!**/package-lock.json"
+        ]
+      }
+    ]
+  }
+}
