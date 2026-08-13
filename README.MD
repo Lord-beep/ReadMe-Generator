@@ -1,26 +1,10 @@
 # 🚀 ReadMeGen
 
-O **ReadMeGen** é uma aplicação que analisa projetos públicos do GitHub e utiliza a **Google Gemini API** para gerar automaticamente documentação em português de Portugal.
+O **ReadMeGen** é uma aplicação que gera automaticamente documentação para projetos públicos do GitHub utilizando a **Google Gemini API**.
 
-## ✨ Funcionalidades
+## ⚙️ Instalação
 
-- 🔗 Análise de repositórios GitHub públicos
-- 🤖 Geração automática de documentação com Gemini
-- 📝 Criação de `README.md`
-- 📄 Criação de `descricao_curta.txt`
-- 🖥️ Interface gráfica
-- ⚙️ Servidor iniciado automaticamente
-- 📦 Suporte para utilização portátil
-
-## 🛠️ Requisitos
-
-- Node.js
-- Chave da Google Gemini API
-- Ligação à Internet
-
-## ⚙️ Configuração
-
-Instala as dependências:
+Na pasta principal do projeto:
 
 ```bash
 npm install
@@ -58,13 +42,38 @@ A aplicação obtém o código do GitHub.
 O Gemini analisa o projeto.
 A documentação é gerada automaticamente.
 
-Os ficheiros são guardados na pasta:
+Os ficheiros são guardados em:
 
 Documentacao-Gerada/
 ├── README.md
 └── descricao_curta.txt
 
 A pasta é criada automaticamente caso não exista.
+
+📦 Versão portátil / EXE
+
+Também podes utilizar o ReadMeGen através do executável do Windows, sem executar npm start.
+
+Depois de compilares o projeto com o Electron Builder, encontrarás o executável na pasta dist.
+
+Por exemplo:
+
+dist/
+└── win-unpacked/
+    └── ReadMeGenUI.exe
+
+Para utilizar:
+
+Compila o projeto.
+Abre a pasta dist/win-unpacked.
+Executa ReadMeGenUI.exe.
+O ReadMeGen inicia automaticamente o servidor local.
+Introduz o repositório GitHub.
+Clica em Gerar Ficheiros de Documentação.
+
+A versão portátil não necessita que abras manualmente o ReadMeGen-Server.
+
+⚠️ A versão portátil continua a precisar de acesso à Internet e de uma chave Gemini configurada no servidor.
 
 🔒 Segurança
 
@@ -76,12 +85,6 @@ O .gitignore impede o envio de ficheiros como:
 node_modules/
 dist/
 *.log
-📦 Versão portátil
-
-O ReadMeGen pode ser compilado para Windows através do Electron Builder.
-
-A versão compilada inicia automaticamente o servidor local e permite utilizar a aplicação sem iniciar manualmente o backend.
-
 📁 Estrutura
 ReadMeGen/
 ├── ReadMeGen-Server/
